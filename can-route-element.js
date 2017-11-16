@@ -1,8 +1,10 @@
 import canElement from 'can-element'
+import define from 'can-define'
 
 export default class canRouteElement extends canElement.Element {
   constructor() {
     super()
+    this.canDefine = define
   }
   routeReady(key) {
     /* nils-route */
